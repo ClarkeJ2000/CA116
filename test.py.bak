@@ -1,0 +1,19 @@
+def my_sort(Numbers):
+	evenNumbers = []
+	oddNumbers = []
+
+for i in Numbers:
+    if i%2==0:
+        evenNumbers.append(i)
+    else:
+        oddNumbers.append(i)
+#print (evenNumbers)
+
+#SORT DEM LISTS
+evenNumbers.sort()
+oddNumbers.sort()
+#print (evenNumbers)
+
+#join the two
+oddNumbers+=evenNumbers
+print (oddNumbers)
